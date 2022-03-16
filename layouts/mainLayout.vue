@@ -132,7 +132,7 @@
 	}
 
 	body {
-		background-color: var(--color-bg);
+		// background-color: var(--color-bg);
 		// color: var(--color-white);
 	}
 

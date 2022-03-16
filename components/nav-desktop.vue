@@ -7,7 +7,7 @@
 
 		<nav class="destkop-menu-wrapper">
 
-				<JudithLogo class="logo-desktop" />
+				<p class="logo-desktop">LogoDesktop</p>
 
 				<ul class="links-container">
 					
@@ -25,17 +25,16 @@
 				</ul>
 
 		</nav>
+		
 	</div>
 </template>
 
 <script>
-	import JudithLogo from "@/assets/svg/logoFull.svg";
+
 	import wording from "@/assets/data/wording"
 	
 export default {
-	components: {
-		JudithLogo,
-		},
+
 
 	props: {
 		
@@ -99,14 +98,14 @@ export default {
 					font-weight: 300;
 					letter-spacing: 0.32px;
 
-					color: var(--color-white);
+					// color: var(--color-white);
 					text-decoration: none;
 					font-size: 16px;
 
 					-webkit-tap-highlight-color: transparent;
 
 					&.nuxt-link-exact-active {
-						color: var(--color-primary);
+						// color: var(--color-primary);
 					}
 
 				}

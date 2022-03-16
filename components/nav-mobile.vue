@@ -12,7 +12,8 @@
 				<div class="header-logo">
 
 					<NuxtLink  v-on:click.native="closeHandler" to="/">
-						<menu-logo-j class="mobile-logo" />
+						<!-- <menu-logo-j class="mobile-logo" /> -->
+						<p>LogoMobile</p>
 					</NuxtLink>
 
 				</div>
@@ -98,8 +99,8 @@
 
 <script>
 
-	import logoJ from "@/assets/svg/logoJ.svg";
-	import Cross from "@/assets/svg/cross.svg";
+	// import logoJ from "@/assets/svg/logoJ.svg";
+	// import Cross from "@/assets/svg/cross.svg";
 	import menuLines from "@/assets/svg/menuLines.svg";
 	
 	import wording from "@/assets/data/wording"
@@ -108,8 +109,7 @@ export default {
 
 	components: {
 		"menu-lines": menuLines,
-		"menu-logo-j": logoJ,
-		"header-cross": Cross
+
 	},
 
 	data() {
