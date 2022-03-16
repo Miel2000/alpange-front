@@ -1,0 +1,13 @@
+query getPhilosophymains {
+
+	philosophyMain {
+    data
+    {
+      attributes {
+        mainTitle
+        subTitle
+      }
+    }
+  }
+
+}

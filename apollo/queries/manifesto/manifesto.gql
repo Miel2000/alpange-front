@@ -1,0 +1,23 @@
+
+query getManifesto {
+
+  manifesto {
+
+    data {
+
+   		attributes {
+
+        punchLineOne
+        punchLineTwo
+        textFirst
+        textSecond
+        signature
+
+      }
+
+    }
+
+  }
+  
+}
+

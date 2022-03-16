@@ -1,0 +1,18 @@
+query getEthicMains {
+
+  ethicMain {
+    
+    data{
+      
+      attributes{
+        
+        mainTitle
+        subTitle
+        
+      }
+      
+    }
+    
+  }
+
+}

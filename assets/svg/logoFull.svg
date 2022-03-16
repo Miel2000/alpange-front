@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="392.765" height="50.098" viewBox="0 0 392.765 50.098">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_30" data-name="Rectangle 30" style="fill:none" d="M0 0h392.765v50.098H0z"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#fff}
+        </style>
+    </defs>
+    <g id="Groupe_29" data-name="Groupe 29">
+        <path id="Rectangle_28" data-name="Rectangle 28" transform="rotate(-45.004 9.845 4.078)" style="fill:#bc4342" d="M0 0h11.535v11.535H0z"/>
+        <g id="Groupe_28" data-name="Groupe 28">
+            <g id="Groupe_27" data-name="Groupe 27" style="clip-path:url(#clip-path)">
+                <path id="Tracé_11" data-name="Tracé 11" class="cls-4" d="M48.192 27.1c0 15.669-10.278 23-22.138 23-12.866 0-20.844-6.4-23.072-15.456l11.572-4.025c.646 4.1 4.672 8.913 9.919 8.913 6.828 0 12-2.085 12-12.435V0h11.719z"/>
+                <path id="Tracé_12" data-name="Tracé 12" class="cls-4" d="M126.68 26.235c0 16.819-11.932 23.863-27.816 23.863S72.2 42.91 72.2 26.379V0h12.217v24.438c0 11.716 5.822 15.022 14.59 15.022 9.273 0 16.029-2.875 16.029-14.95V0h11.644z"/>
+                <path id="Tracé_13" data-name="Tracé 13" class="cls-4" d="M178.431 0c17.538 0 31.841 4.888 31.841 24.222 0 10.853-7.547 24.294-30.188 24.294h-29.11V0zm-15.669 9.775V37.3h15.813c13.081 0 19.478-5.031 19.478-13.513 0-8.913-6.469-14.016-19.622-14.016z"/>
+                <path id="Rectangle_29" data-name="Rectangle 29" class="cls-4" transform="translate(234.35)" d="M0 0h11.788v48.517H0z"/>
+                <path id="Tracé_14" data-name="Tracé 14" class="cls-4" d="M318.086 10.853h-19.694v37.663h-11.716V10.853h-19.694V0h51.1z"/>
+                <path id="Tracé_15" data-name="Tracé 15" class="cls-4" d="M392.765 48.517h-11.716V28.176h-31.41v20.341h-11.715V0h11.715v17.61h31.41V0h11.716z"/>
+            </g>
+        </g>
+    </g>
+</svg>

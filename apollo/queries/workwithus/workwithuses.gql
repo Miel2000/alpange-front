@@ -1,0 +1,19 @@
+
+query getWorkWithUses {
+
+  workwithuses {
+
+    data {
+
+      attributes {
+        title
+		    subtitle
+        description
+
+      }
+
+    }
+
+  }
+
+}
