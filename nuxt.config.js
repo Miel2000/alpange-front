@@ -20,7 +20,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Judith',
+    title: 'Alpange',
     htmlAttrs: {
       lang: 'en'
     },
