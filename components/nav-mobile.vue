@@ -16,8 +16,6 @@
 						<p>LogoMobile</p>
 					</NuxtLink>
 
-
-
 				</div>
 
 				<div  @click="openHandler" class="header-toggle">

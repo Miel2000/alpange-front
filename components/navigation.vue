@@ -1,4 +1,5 @@
 <template>
+
 	<div class="navigation-main-wrapper">
 	
 		<nav-mobile v-if="$store.state.variables.isMobile" />
@@ -7,6 +8,7 @@
 		
 
 	</div>
+	
 </template>
 
 <script>
