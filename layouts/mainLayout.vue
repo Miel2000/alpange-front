@@ -5,7 +5,7 @@
 		]"
 	>
 
-		<navigation :design="currentDesign"/>
+		<navigation />
 
 		<div :class="[
 			'main-content',

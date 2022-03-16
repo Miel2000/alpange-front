@@ -4,7 +4,7 @@
 	
 		<nav-mobile v-if="$store.state.variables.isMobile" />
 
-		<nav-desktop v-else :design="design"/>
+		<nav-desktop v-else />
 		
 
 	</div>
@@ -21,16 +21,8 @@
 		components: {
 			"nav-mobile": navMobile,
 			"nav-desktop": navDesktop
+		}
 
-		},
-
-		props: {
-			design: {
-				type: String,
-				required: true
-			}
-
-		},
 	}
 	
 </script>
@@ -44,7 +36,6 @@
 		width: 100%;
 		top: 0;
 		left: 0;
-		// background-color: var(--color-bg);
 	}
 
 </style>
