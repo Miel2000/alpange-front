@@ -1,0 +1,511 @@
+$enterDuration: 1.3s;
+$leaveDuration: 0.5s;
+$caretDuration: 1.7s;
+$toggleMenuMobileDuration: 0.75s;
+$mobileBlurNavDuration: 1s;
+
+
+.anim {
+
+	&-shadow {
+
+		will-change: box-shadow;
+
+		animation: anim-shadow-keyframes 17s infinite;
+
+	}
+
+	&-colors {
+
+		animation: anim-colors-keyframes 14s infinite;
+
+	}
+
+}
+
+@keyframes anim-colors-keyframes {
+
+	0%, 100% {
+		color: var(--color-primary);
+	}
+
+	33% {
+		color: var(--color-secondary);
+	}
+
+	66% {
+		color: var(--color-ternary);
+	}
+
+}
+
+
+@keyframes anim-shadow-keyframes {
+
+	$blurSize: 10vh;
+
+	0% {
+		box-shadow: 
+			0 0 math.div($blurSize, 10) 5px transparent inset,
+			0px 0px $blurSize 0px transparent;
+	}
+
+	30% {
+		box-shadow: 
+			0px 0px $blurSize 0 currentColor inset,
+			0px 0px $blurSize math.div($blurSize, 2) currentColor;
+	}
+
+	100% {
+		box-shadow: 
+			0px 0px $blurSize 0 transparent inset,
+			0 0 $blurSize math.div($blurSize, 2) transparent;
+	}
+
+}
+
+@keyframes anim-particles-1 {
+
+	$distance: 40px;
+
+	0%, 
+	100% {
+		filter: blur(5px);
+		transform: translate3d($distance, math.div($distance, 2), 0) rotate(1180deg) scale(0.6);
+	}
+
+	30%,
+	75% {
+		filter: blur(0);
+		transform: translate3d($distance * -1, math.div($distance, -1.5), 0) rotate(80deg) scale(0.8);
+	}
+
+	20%,
+	50%,
+	90% {
+		filter: blur(2px);
+		transform: translate3d(0, 0, 0);
+	}
+
+}
+
+@keyframes anim-particles-2 {
+
+	$distance: 80px;
+
+	0%, 
+	100% {
+		filter: blur(5px);
+		transform: translate3d($distance * -2, math.div($distance, -1.5), 0) rotate(-580deg) scale(1.3);
+	}
+
+	30%,
+	75% {
+		filter: blur(0);
+		transform: translate3d($distance * 1.4, math.div($distance, 1.8), 0) rotate(200deg) scale(0.5);
+	}
+
+	20%,
+	50%,
+	90% {
+		filter: blur(2px);
+		transform: translate3d(0, 0, 0);
+	}
+
+}
+
+.transition {
+
+
+	&-description {
+
+		&-y {
+
+			&-down {
+
+				&-enter-active, 
+				&-leave-active {
+			
+					transform: translateY(0);
+					opacity: 1;
+			
+					will-change: transform, opacity;
+			
+			
+				}
+			
+				&-enter-active {
+			
+					transition: 
+						transform 1.35s,
+						opacity 2.5s;
+			
+				} 
+			
+				&-leave-active {
+			
+					transition: 
+						transform .85s,
+						opacity .45s;
+			
+				}
+			
+				&-enter, 
+				&-leave-to {
+			
+					transform: translateY(-50%);
+					opacity: 0;
+			
+				}
+			
+				&-leave-to {
+			
+					transform: translateY(50%);
+			
+				}
+
+			}
+
+			&-up {
+
+				&-enter-active, 
+				&-leave-active {
+			
+					transform: translateY(0);
+					opacity: 1;
+			
+					will-change: transform, opacity;
+			
+			
+				}
+			
+				&-enter-active {
+			
+					transition: 
+						transform 1.35s,
+						opacity 2.5s;
+			
+				} 
+			
+				&-leave-active {
+			
+					transition: 
+						transform .85s,
+						opacity .45s;
+			
+				}
+			
+				&-enter, 
+				&-leave-to {
+			
+					transform: translateY(50%);
+					opacity: 0;
+			
+				}
+			
+				&-leave-to {
+			
+					transform: translateY(-50%);
+			
+				}
+
+			}
+
+		}
+
+	}
+
+	&-caret {
+
+		&-left {
+
+			&-enter-active, 
+			&-leave-active {
+		
+				left: 0;
+				bottom: 0;
+				opacity: 1;
+		
+				will-change: left, bottom, opacity;
+		
+		
+			}
+		
+			&-enter-active {
+		
+				transform: rotate(-45deg);
+
+				transition: 
+					left $caretDuration,
+					bottom $caretDuration,
+					opacity calc($caretDuration / 2);
+		
+			} 
+		
+			&-enter, 
+			&-leave-to {
+		
+				left: 15%;
+				bottom: 15%;
+				opacity: 0;
+		
+			}
+
+		}
+
+		&-right {
+
+			&-enter-active, 
+			&-leave-active {
+		
+				right: 0;
+				top: 0;
+				opacity: 1;
+		
+				will-change: right, top, opacity;
+		
+		
+			}
+		
+			&-enter-active {
+		
+				transform: rotate(-225deg);
+
+				transition: 
+					right $caretDuration,
+					top $caretDuration,
+					opacity calc($caretDuration / 2);
+		
+			} 
+		
+			&-enter, 
+			&-leave-to {
+		
+				right: 15%;
+				top: 15%;
+				opacity: 0;
+		
+			}
+
+		}
+	
+	}
+	&-case-viewer {
+
+		&-enter-active,
+		&-leave-active {
+
+			display: block;
+			position: relative;
+
+			opacity: 1;
+			transform: translateY(0);
+			
+			will-change:  opacity, transform;
+			
+		}
+		
+		&-enter-active {
+
+			transition: all $enterDuration;
+
+		}
+
+		&-leave-active {
+
+			transition: all $leaveDuration;
+
+		}
+
+		&-enter,
+		&-leave-to {
+		
+			transform: translateY(400px);
+			opacity: 0;
+			
+		}
+
+	}
+	&-nav-mobile {
+
+		&-enter-active,
+		&-leave-active {
+
+			display: block;
+			position: relative;
+
+			opacity: 1;
+			
+			will-change:  opacity, transform;
+			transition-timing-function: ease;
+			
+		}
+		
+		&-enter-active {
+
+			transition: all $toggleMenuMobileDuration;
+
+		}
+
+		&-leave-active {
+
+			transition: all $toggleMenuMobileDuration;
+
+		}
+
+		&-enter {
+			transform: translateX(120%);	
+		}
+		
+
+		&-enter-to {
+			transform: translateX(0%);	
+		}
+		
+		&-leave {
+			transform: translateX(0%);
+		}
+		
+		&-leave-to {
+			transform: translateX(120%);
+		}
+
+	}
+	
+	&-logo-j {
+
+		&-enter-active,
+		&-leave-active {
+
+	
+			opacity: 1;
+			
+			will-change:  opacity, transform;
+			
+		}
+		
+		&-enter-active {
+
+			transition: all 0.75s;
+
+		}
+
+		&-leave-active {
+
+			transition: all 0.75s;
+
+		}
+
+		&-enter {
+			transform: translateY(-100px);	
+		}
+		
+
+		&-enter-to {
+			transform: translateY(0px);	
+		}
+		
+		&-leave {
+			transform: translateY(0px);
+		}
+		
+		&-leave-to {
+			transform: translateY(-100px);
+		}
+
+	}
+	
+	&-mobile-blur {
+
+		&-enter-active,
+		&-leave-active {
+
+	
+			opacity: 0;
+			
+			will-change:  opacity, transform;
+			
+		}
+		
+		&-enter-active {
+
+			transition: all $mobileBlurNavDuration;
+			
+		}
+
+		&-leave-active {
+
+			transition: all $mobileBlurNavDuration;
+
+		}
+
+		&-enter {
+			
+		}
+		
+
+		&-enter-to {
+			opacity:1;
+		}
+		
+		&-leave {
+			opacity:1;
+		}
+		
+		&-leave-to {
+			opacity:0;
+		}
+
+	}
+
+
+
+	
+
+}
+
+
+// default nuxt transition name beetween pages
+.page {
+
+	&-enter-active, 
+	&-leave-active {
+
+		display: block;
+
+		opacity: 1;
+		transform: translateY(0);
+		
+		will-change: transform, opacity;
+		
+		
+	}
+	
+	&-enter-active {
+		
+		transition: all $enterDuration;
+		
+	} 
+
+	&-leave-active {
+		
+		transition: all $leaveDuration;
+		
+	} 
+	
+	&-enter {
+		
+		transform: translateY(400px);
+		opacity: 0;
+		
+	}
+	
+	&-leave-to {
+		
+		transform: translateY(-200px);
+		opacity: 0;
+
+	}
+
+}
+

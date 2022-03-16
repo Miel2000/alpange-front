@@ -1,0 +1,74 @@
+@mixin mainColumn {
+	width: 90%;
+	max-width: $columnMaxWith;
+	margin: 0 auto;
+}
+
+@mixin fontWorkWithUs {
+	.font {
+
+		&-description {
+
+			&-subtitle {
+				font-family: "AktivGrotesk";
+				font-weight: bold;
+				font-size: 26px;
+				line-height: 33px;
+				color: currentColor;
+				text-transform: uppercase;
+			}
+
+			&-text {
+				p {
+					font-family: "AktivGrotesk";
+					font-weight: 300;
+					font-size: 24px;
+					line-height: 31px;
+				}
+			}
+
+		}
+
+		&-section {
+
+			&-title {
+				font-family: "PresicavXl";
+				font-size: 38px;
+				font-weight: normal;
+				line-height: 48px;
+				letter-spacing: 4.8px;
+				color: var(--color-white);
+				text-transform: capitalize;
+			}
+
+		}
+
+	}
+}
+
+@mixin maxHeightViewport {
+	overflow: hidden;
+	max-height: calc(100vh - $headerHeightSecondary);
+	height: 100%;
+
+	::v-deep .media-handler {
+		max-height: calc(100vh - $headerHeightSecondary);
+		height: 100%;
+
+		.content-video,
+		.content-image {
+			max-height: calc(100vh - $headerHeightSecondary);
+			height: 100%;
+
+			img,
+			video {
+				max-height: calc(100vh - $headerHeightSecondary);
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+
+query getArtists {
+
+  artists {
+
+    data {
+
+      attributes {
+
+        name
+        surname
+        role
+        website
+        description
+
+        profilePic {
+          data {
+            attributes {
+          		url
+            }
+          }
+        }
+        
+        realisations {    
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,27 @@
+query getHomeFolios {
+
+  homefolios {
+    
+    data{
+      
+      attributes{
+        
+        title
+        description
+        visual{
+          data{
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+        
+      }
+      
+    }
+    
+  }
+
+}

@@ -1,0 +1,68 @@
+query getCases {
+  cases {
+    data {
+      attributes {
+        
+        name
+        ctaUrl
+        ctaWording
+        description
+      	extraInfos
+        catchline
+        order
+        
+        parallax {
+          data {
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+        
+       	cover {
+          data {
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+        
+        extramedias {
+          data {
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+        
+        footer {
+          data {
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+        
+   			thumbnails {
+          data {
+            attributes{
+              formats
+              url
+              ext
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+

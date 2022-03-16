@@ -1,0 +1,23 @@
+// colors are in mainLayout (because css variables)
+
+// sizes
+$headerHeightPrimary: 150px;
+$headerHeightSecondary: 90px;
+$logoSizeMaxPrimary: 290px;
+$logoSizeMaxSecondary: 150px;
+$columnMaxWith: 1650px;
+$alternateColumnMaxWith: 950px;
+$mobileBorderSize: 25px;
+
+$componentMargin: 150px;
+
+
+
+// mq
+$mobile: "(max-width: 414px)";
+$desktop: "(min-width: 415px)";
+$desktopLarge: "(min-width: 1921px)";
+
+.no-scroll {
+	overflow: hidden;
+}

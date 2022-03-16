@@ -1,0 +1,15 @@
+query getPhilosophies {
+
+  philosophies {
+
+    data {
+      attributes {
+        title
+        description
+      }
+    }
+
+  }
+  
+}
+

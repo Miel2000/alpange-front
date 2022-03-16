@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'PresicavRg';
+    src: url('@/assets/fonts/presicav/PresicavRg-Bold.eot');
+    src: local('@/assets/fonts/presicav/PresicavRg-Bold'),
+        url('@/assets/fonts/presicav/PresicavRg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavRg-Bold.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavRg-Bold.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavRg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PresicavLt';
+    src: url('@/assets/fonts/presicav/PresicavLt-Regular.eot');
+    src: local('@/assets/fonts/presicav/PresicavLt-Regular'),
+        url('@/assets/fonts/presicav/PresicavLt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavLt-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavLt-Regular.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavLt-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PresicavHv';
+    src: url('@/assets/fonts/presicav/PresicavHv-Regular.eot');
+    src: local('@/assets/fonts/presicav/PresicavHv-Regular'),
+        url('@/assets/fonts/presicav/PresicavHv-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavHv-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavHv-Regular.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavHv-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PresicavXl';
+    src: url('@/assets/fonts/presicav/PresicavXl-Regular.eot');
+    src: local('@/assets/fonts/presicav/PresicavXl-Regular'),
+        url('@/assets/fonts/presicav/PresicavXl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavXl-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavXl-Regular.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavXl-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PresicavUl';
+    src: url('@/assets/fonts/presicav/PresicavUl-Regular.eot');
+    src: local('@/assets/fonts/presicav/PresicavUl-Regular'),
+        url('@/assets/fonts/presicav/PresicavUl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavUl-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavUl-Regular.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavUl-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PresicavRg';
+    src: url('@/assets/fonts/presicav/PresicavRg-Regular.eot');
+    src: local('@/assets/fonts/presicav/PresicavRg-Regular'),
+        url('@/assets/fonts/presicav/PresicavRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/presicav/PresicavRg-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/presicav/PresicavRg-Regular.woff') format('woff'),
+        url('@/assets/fonts/presicav/PresicavRg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic.eot');
+    src: local('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic.woff2') format('woff2'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic.woff') format('woff'),
+        url('@/assets/fonts/aktivGrotesk/AktivGroteskCorp-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
