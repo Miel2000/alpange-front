@@ -3,7 +3,7 @@
 	<div class="nav-mobile-container">
 
 		<!-- header -->
-		<transition name="transition-logo-j">
+		<transition name="transition-logo">
 	
 			<div class="header-wrapper">			
 
