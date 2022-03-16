@@ -53,25 +53,6 @@
 
 	.home-wrapper {
 		position: relative;
-
-
-		.index-folio {
-			margin-top: calc($componentMargin * -1);
-
-			@media #{$mobile} {
-				margin-top: $componentMargin;
-			}
-
-		}
-
-		& > * {
-
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-
-		}
-
 	}
 
 </style>

@@ -4,15 +4,12 @@
 
 		<!-- header -->
 		<transition name="transition-logo-j">
-
-			<!-- <div v-if="!displayMenuMobile" class="mobile-wrapper"> -->
 	
 			<div class="header-wrapper">			
 
 				<div class="header-logo">
 
 					<NuxtLink  v-on:click.native="closeHandler" to="/">
-						<!-- <menu-logo-j class="mobile-logo" /> -->
 						<p>LogoMobile</p>
 					</NuxtLink>
 
@@ -84,15 +81,18 @@
 		</transition>
 
 		<transition name="transition-mobile-blur">
+
 			<div 
-			v-if="computedIsMobileNavOpen"
-			@click="closeHandler"
-			data-info="nav-blur"
-			class="nav-blur"
+				v-if="computedIsMobileNavOpen"
+				@click="closeHandler"
+				data-info="nav-blur"
+				class="nav-blur"
 			>
 
 			</div>
+
 		</transition >
+
 	</div>
 	
 </template>
@@ -105,56 +105,56 @@
 	
 	import wording from "@/assets/data/wording"
 
-export default {
+	export default {
 
-	components: {
-		"menu-lines": menuLines,
-
-	},
-
-	data() {
-		return {
-			displayMenuMobile: true,
-			allLinks: wording.links
-		}
-	},
-
-	methods: {
-
-		openHandler() {
-
-			this.$store.commit('variables/setMobileNavOpen', true)
-
+		components: {
+			"menu-lines": menuLines,
 		},
 
-		closeHandler() {
-
-			this.$store.commit('variables/setMobileNavOpen', false)
-
+		data() {
+			return {
+				displayMenuMobile: true,
+				allLinks: wording.links
+			}
 		},
-		swipePanel( direction ) {
 
-			if( direction === "right" ) {
+		methods: {
+
+			openHandler() {
+
+				this.$store.commit('variables/setMobileNavOpen', true)
+
+			},
+
+			closeHandler() {
 
 				this.$store.commit('variables/setMobileNavOpen', false)
+
+			},
+
+			swipePanel( direction ) {
+
+				if( direction === "right" ) {
+
+					this.$store.commit('variables/setMobileNavOpen', false)
+
+				}
+
+			}
+			
+		},
+
+		computed: {
+
+			computedIsMobileNavOpen() {
+				
+				return  this.$store.state.variables.isMobileNavOpen;
 
 			}
 
 		}
-	},
-
-
-	computed: {
-
-		computedIsMobileNavOpen() {
-			
-			return  this.$store.state.variables.isMobileNavOpen;
-
-		}
 
 	}
-
-}
 
 </script>
 
